@@ -1,4 +1,5 @@
-import { useEffect, useState } from "react";
+//import { useEffect, useState } from "react";
+import { useEffect, useState, useCallback } from "react";
 import ExpenseForm from "./components/ExpenseForm";
 import ExpenseList from "./components/ExpenseList";
 import Filters from "./components/Filter";
@@ -10,7 +11,7 @@ function App() {
   const [sort, setSort] = useState("date_desc");
   const [loading, setLoading] = useState(false);
 
-  const loadExpenses = async () => {
+  const loadExpenses = useCallback(async () => {
     setLoading(true);
     try {
       const data = await fetchExpenses(category, sort);
@@ -20,11 +21,12 @@ function App() {
     } finally {
       setLoading(false);
     }
-  };
+  }, [category, sort]); // ✅ dependencies here
 
   useEffect(() => {
     loadExpenses();
-  }, [category, sort]);
+  }, [loadExpenses]); // ✅ only this now
+
 
   return (
     <div style={{ padding: "20px" }}>
