@@ -33,7 +33,8 @@ npm run dev
 
 Create a .env file:
 
-VITE_API_URL=http://3.107.107.49:8080/:8080
+VITE_API_URL=http://3.107.107.49:8080/
+
 🔗 Backend Integration
 
 This frontend consumes REST APIs for expense operations. Ensure backend is running and accessible.
