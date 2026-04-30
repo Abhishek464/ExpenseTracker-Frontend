@@ -3,7 +3,7 @@
 A modern and responsive Expense Tracker Frontend built using React. This application allows users to manage their expenses efficiently with a clean UI and seamless integration with a backend API.
 
 🚀 Features
-📊 Add, view, and delete expenses
+📊 Add, view
 🔄 Real-time updates with API integration
 📱 Fully responsive UI (mobile + desktop)
 ⚡ Fast performance using modern frontend tooling
@@ -33,7 +33,7 @@ npm run dev
 
 Create a .env file:
 
-VITE_API_URL=http://localhost:8080
+VITE_API_URL=http://http://3.107.107.49:8080/:8080
 🔗 Backend Integration
 
 This frontend consumes REST APIs for expense operations. Ensure backend is running and accessible.
