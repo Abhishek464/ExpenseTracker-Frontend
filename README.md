@@ -54,6 +54,8 @@ Environment-based configuration
 Used VITE_API_URL to support multiple environments (local, staging, production).
 Lightweight state management
 Used React Hooks instead of heavier libraries (like Redux) to keep complexity low.
+
+
 ⚖️ Trade-offs (Due to Time Constraints)
 Minimal state management
 Avoided introducing Redux/Zustand to reduce setup time.
@@ -64,6 +66,8 @@ Limited UI polish
 Focus was on functionality over advanced styling and animations.
 No advanced optimization
 Skipped memoization, lazy loading, and performance tuning initially.
+
+
 🚫 What Was Intentionally Not Implemented
 Authentication & Authorization
 Skipped to keep scope focused on core expense tracking.
