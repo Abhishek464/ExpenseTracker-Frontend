@@ -1,6 +1,6 @@
 //const BASE_URL = "http://localhost:8080";
-const BASE_URL = import.meta.env.VITE_API_URL;
-
+//const BASE_URL = import.meta.env.VITE_API_URL;
+const BASE_URL= "http://3.107.107.49:8080"
 export const createExpense = async (data, idempotencyKey) => {
   const res = await fetch(`${BASE_URL}/expenses`, {
     method: "POST",
