@@ -1,78 +1,85 @@
-<<<<<<< HEAD
-# ExpenseTracker-Frontend
-=======
-<<<<<<< HEAD
-# Expense-Tracker-Application
-=======
-# Getting Started with Create React App
+💰 Expense Tracker – Frontend
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+A modern and responsive Expense Tracker Frontend built using React. This application allows users to manage their expenses efficiently with a clean UI and seamless integration with a backend API.
 
-## Available Scripts
+🚀 Features
+📊 Add, view, and delete expenses
+🔄 Real-time updates with API integration
+📱 Fully responsive UI (mobile + desktop)
+⚡ Fast performance using modern frontend tooling
+🔗 Backend integration via REST APIs
+🛠️ Tech Stack
+Frontend Framework: React
+Build Tool: Vite
+Styling: CSS / Tailwind (update if needed)
+HTTP Client: Axios / Fetch API
+State Management: React Hooks
+📂 Project Structure
+src/
+├── components/
+├── pages/
+├── services/
+├── hooks/
+├── assets/
+├── App.jsx
+└── main.jsx
+⚙️ Getting Started
+Clone & Run
+git clone https://github.com/Abhishek464/ExpenseTracker-Frontend.git
+cd ExpenseTracker-Frontend
+npm install
+npm run dev
+🔗 Environment Variables
 
-In the project directory, you can run:
+Create a .env file:
 
-### `npm start`
+VITE_API_URL=http://localhost:8080
+🔗 Backend Integration
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+This frontend consumes REST APIs for expense operations. Ensure backend is running and accessible.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+🌐 Deployment
 
-### `npm test`
+Deployed easily using platforms like Vercel or Netlify.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+🧠 Design Decisions & Trade-offs
+✅ Key Design Decisions
+Component-based architecture
+Broke UI into reusable components to keep code modular and maintainable.
+Separation of concerns
+API logic placed inside a dedicated services layer.
+UI components remain clean and focused on rendering.
+Environment-based configuration
+Used VITE_API_URL to support multiple environments (local, staging, production).
+Lightweight state management
+Used React Hooks instead of heavier libraries (like Redux) to keep complexity low.
+⚖️ Trade-offs (Due to Time Constraints)
+Minimal state management
+Avoided introducing Redux/Zustand to reduce setup time.
+Trade-off: Less scalable for very large applications.
+Basic error handling
+Implemented simple error states instead of a global error boundary system.
+Limited UI polish
+Focus was on functionality over advanced styling and animations.
+No advanced optimization
+Skipped memoization, lazy loading, and performance tuning initially.
+🚫 What Was Intentionally Not Implemented
+Authentication & Authorization
+Skipped to keep scope focused on core expense tracking.
+Advanced analytics / charts
+Not included to prioritize CRUD functionality.
+Form validation libraries
+Used basic validation instead of libraries like Formik or React Hook Form.
+Testing (Unit / Integration)
+Not added due to time constraints, but would be critical for production.
+Offline support / caching
+Not implemented to keep architecture simple.
+🧠 Future Enhancements
+🔐 Authentication system
+📊 Expense analytics dashboard
+📅 Filters & reports
+⚡ Performance optimizations
+🧪 Unit & integration tests
+👨‍💻 Author
 
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
->>>>>>> 02407f8 (React FrontEnd for Expense Tracker Application)
->>>>>>> a13ae15 (React-Frontend ExpenseTracker)
+Abhishek Gupta
